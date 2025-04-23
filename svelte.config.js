@@ -6,8 +6,7 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html',
 			appDir: 'app'
-		}),
-		presprocess: vitePreprocess()
+		})
 	}
 };
 
