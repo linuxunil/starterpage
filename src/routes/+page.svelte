@@ -49,8 +49,8 @@
 	.showcase {
 		display: flex;
 		justify-content: center;
+		background-color: var(--mocha-mousse);
 		border-radius: var(--border-radius);
-		background-color: rgb(112, 81, 66);
 	}
 	.container {
 		display: flex;
