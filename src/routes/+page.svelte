@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Bookmarks from '$lib/components/Bookmarks.svelte';
 	import Search from '$lib/components/Search.svelte';
-	import Forcast from '$lib/components/Forcast.svelte';
+	import Forecast from '$lib/components/Forecast.svelte';
 	let src = 'https://prettycoffee.github.io/fluidity/assets/pic_2-ae471b04.jpg';
 	let search_term = $state('Duck Duck Go');
 	let bookmarks = $state();
@@ -24,7 +24,7 @@
 <div class="container">
 	<div class="showcase">
 		{#if position}
-			<Forcast {position} />
+			<Forecast {position} />
 		{/if}
 		<img {src} alt="I'm Fine" />
 
