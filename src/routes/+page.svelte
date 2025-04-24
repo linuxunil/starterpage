@@ -2,22 +2,35 @@
 	import { onMount } from 'svelte';
 	import Bookmarks from '$lib/components/Bookmarks.svelte';
 	import Search from '$lib/components/Search.svelte';
+	import Forcast from '$lib/components/Forcast.svelte';
 	let src = 'https://prettycoffee.github.io/fluidity/assets/pic_2-ae471b04.jpg';
 	let search_term = $state('Duck Duck Go');
 	let bookmarks = $state();
+	let position = $state();
 
+	function error(err) {
+		console.warn(`ERROR(${err.code}): ${err.message}`);
+	}
+	function success(pos) {
+		position = pos.coords;
+	}
 	onMount(async () => {
 		const resposne = await fetch('bookmarks.json');
 		bookmarks = await resposne.json();
+		navigator.geolocation.getCurrentPosition(success, error);
 	});
 </script>
 
 <div class="container">
 	<div class="showcase">
-		<img {src} alt="Test" />
+		{#if position}
+			<Forcast {position} />
+		{/if}
+		<img {src} alt="I'm Fine" />
 
 		<Bookmarks {bookmarks} />
 	</div>
+	I really<i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
 	<Search {search_term} />
 </div>
 
