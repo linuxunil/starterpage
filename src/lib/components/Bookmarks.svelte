@@ -16,8 +16,11 @@
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: space-around;
-		height: 9rem;
+		width: 100%;
 		padding: 1rem;
+		margin: 0.5rem;
 		gap: 0.5rem;
+		background-color: var(--bg-color);
+		border-radius: var(--border-radius);
 	}
 </style>

@@ -13,7 +13,7 @@
 <style>
 	.search {
 		display: flex;
-		padding: 5rem;
+		padding: 1rem;
 		width: 30rem;
 		flex-direction: inherit;
 		align-items: center;

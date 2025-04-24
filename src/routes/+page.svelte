@@ -3,7 +3,7 @@
 	import Bookmarks from '$lib/components/Bookmarks.svelte';
 	import Search from '$lib/components/Search.svelte';
 	let src = 'https://prettycoffee.github.io/fluidity/assets/pic_2-ae471b04.jpg';
-	let search_term = $state('Search');
+	let search_term = $state('Duck Duck Go');
 	let bookmarks = $state();
 
 	onMount(async () => {
@@ -15,9 +15,10 @@
 <div class="container">
 	<div class="showcase">
 		<img {src} alt="Test" />
+
+		<Bookmarks {bookmarks} />
 	</div>
 	<Search {search_term} />
-	<Bookmarks {bookmarks} />
 </div>
 
 <style>
@@ -26,6 +27,7 @@
 		width: 400px;
 		border: 2px solid var(--default-color);
 		padding: 10px;
+		margin: 10px;
 		object-fit: cover;
 		animation-name: circling-shadow;
 		animation-duration: 4s;
@@ -34,6 +36,8 @@
 	.showcase {
 		display: flex;
 		justify-content: center;
+		background-color: var(--mocha-mousse);
+		border-radius: var(--border-radius);
 	}
 	.container {
 		display: flex;
