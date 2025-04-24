@@ -1,8 +1,11 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import path from 'path';
 
 const config = {
 	kit: {
+		alias: {
+			'$data': path.resolve('./src/data'),
+		},
 		adapter: adapter({
 			fallback: '404.html',
 			appDir: 'app'

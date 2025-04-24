@@ -1,0 +1,121 @@
+[
+	{
+		"guid": "_8b31P4fE81Q",
+		"title": "Proton Mail",
+		"index": 0,
+		"dateAdded": 1627045801726000,
+		"lastModified": 1745014871000000,
+		"id": 51,
+		"typeCode": 1,
+		"tags": "email",
+		"type": "text/x-moz-place",
+		"uri": "https://protonmail.com/"
+	},
+	{
+		"guid": "8OuMqrod-p2h",
+		"title": "GMail",
+		"index": 1,
+		"dateAdded": 1649607548850000,
+		"lastModified": 1745014871000000,
+		"id": 52,
+		"typeCode": 1,
+		"tags": "email",
+		"type": "text/x-moz-place",
+		"uri": "https://mail.google.com/mail/u/0/#inbox"
+	},
+	{
+		"guid": "4qlq4TAhvjv4",
+		"title": "USI Email",
+		"index": 2,
+		"dateAdded": 1726590655995000,
+		"lastModified": 1745014871000000,
+		"id": 53,
+		"typeCode": 1,
+		"tags": "email",
+		"type": "text/x-moz-place",
+		"uri": "https://outlook.office.com/mail/"
+	},
+	{
+		"guid": "7v6kr0iaN9HS",
+		"title": "Knewton - Learn",
+		"index": 4,
+		"dateAdded": 1741008919126000,
+		"lastModified": 1745014871000000,
+		"id": 55,
+		"typeCode": 1,
+		"iconUri": "https://consumer-cdn.knewton.com/jsx/img/favicon-512x512.983ab00a7673c759f90f.png",
+		"type": "text/x-moz-place",
+		"uri": "https://www.knewton.com/learn/course/d56d4b8d-f783-4472-8043-c7e6cc2c9c17"
+	},
+	{
+		"guid": "xdl5S08CDRi2",
+		"title": "MyLab Math",
+		"index": 5,
+		"dateAdded": 1726057230581000,
+		"lastModified": 1745014871000000,
+		"id": 56,
+		"typeCode": 1,
+		"tags": "USI,education,math",
+		"iconUri": "https://www.pearson.com/content/dam/global/shared/brand/evolution/favicons/favicon-dark.svg",
+		"type": "text/x-moz-place",
+		"uri": "https://www.pearson.com/en-us/higher-education/products-services/mylab/math.html"
+	},
+	{
+		"guid": "jv3DGmwvBE-q",
+		"title": "USI Portal",
+		"index": 6,
+		"dateAdded": 1726865656418000,
+		"lastModified": 1745014871000000,
+		"id": 57,
+		"typeCode": 1,
+		"tags": "USI,education,portal",
+		"type": "text/x-moz-place",
+		"uri": "https://portal.usi.edu/external/login?redirectTo=%2Fdashboard"
+	},
+	{
+		"guid": "71ACvbVrRklW",
+		"title": "Divorce Attorney Portal",
+		"index": 8,
+		"dateAdded": 1739981181800000,
+		"lastModified": 1745014871000000,
+		"id": 59,
+		"typeCode": 1,
+		"tags": "attorney,divorce",
+		"type": "text/x-moz-place",
+		"uri": "https://brett-h-pritchard-pc.mycase.com/messages/t/24876944"
+	},
+	{
+		"guid": "ZZDrtBQ0XD7_",
+		"title": "GORUCK Light Training - All Day Ruckoff",
+		"index": 9,
+		"dateAdded": 1738329406257000,
+		"lastModified": 1745014871000000,
+		"id": 60,
+		"typeCode": 1,
+		"type": "text/x-moz-place",
+		"uri": "https://alldayruckoff.com/event-training/goruck-light-training/"
+	},
+	{
+		"guid": "CHyHXrpznCGv",
+		"title": "Json Generator",
+		"index": 13,
+		"dateAdded": 1743086778673000,
+		"lastModified": 1745014871000000,
+		"id": 70,
+		"typeCode": 1,
+		"type": "text/x-moz-place",
+		"uri": "https://www.databasetestdata.com/generated-data"
+	},
+	{
+		"guid": "yS7DAy16TezO",
+		"title": "Awesome_Discount",
+		"index": 14,
+		"dateAdded": 1745071008522000,
+		"lastModified": 1745071008522000,
+		"id": 186,
+		"typeCode": 1,
+		"iconUri": "https://project-awesome.org/images/favicon/android-icon-192x192.png",
+		"type": "text/x-moz-place",
+		"uri": "https://project-awesome.org/AchoArnold/discount-for-student-dev"
+	}
+]
