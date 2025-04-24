@@ -23,9 +23,9 @@
 
 <div class="container">
 	<div class="showcase">
-		{#if position}
-			<Forcast {position} />
-		{/if}
+		<!-- {#if position} -->
+		<!-- 	<Forcast {position} /> -->
+		<!-- {/if} -->
 		<img {src} alt="I'm Fine" />
 
 		<Bookmarks {bookmarks} />
