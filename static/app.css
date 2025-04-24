@@ -1,11 +1,11 @@
 @import './variables.css';
 @import './animations.css';
-@import 'https://www.nerdfonts.com/assets/css/webfont.css'
-	/***********************
+
+/***********************
  * Idk what this does. *
  *    No touchies.	   *
  **********************/
-	body {
+body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -13,24 +13,25 @@
 /********************
  *   	  Fonts 		  *
  ********************/
-/* @font-face { */
-/* 	font-family: 'Fira Code'; */
-/* 	font-style: normal; */
-/* 	font-weight: 300; */
-/* 	src: */
-/* 		local('Fira Code'), */
-/* 		url('./FiraCode-Light.woff') format('woff'); */
-/* } */
-/* @font-face { */
-/* 	font-family: 'Fira Code'; */
-/* 	font-style: normal; */
-/* 	font-weight: 500; */
-/* 	src: */
-/* 		local('Fira Code'), */
-/* 		url('./FiraCode-Regular.woff') format('woff'); */
-/* } */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Fira Code'),
+		url('./FiraCode-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local('Fira Code'),
+		url('./FiraCode-Regular.woff') format('woff');
+}
 body * {
-	font-family: 'JetBrains Mono';
+	font-family: 'Fira Code';
+	font-weight: 300;
 }
 
 /********************

@@ -1,33 +1,32 @@
-@import './variables.css';
-@import './animations.css';
-@import './jetbrains.css';
+@import "./variables.css"; 
+@import "./animations.css"; 
 
 /***********************
  * Idk what this does. *
  *    No touchies.	   *
  **********************/
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /********************
  *   	  Fonts 		  *
  ********************/
-/* @font-face { */
-/* 	font-family: 'Fira Code'; */
-/* 	font-style: normal; */
-/* 	font-weight: 300; */
-/* 	src: local('Fira Code'), url('./FiraCode-Light.woff') format('woff'); */
-/* } */
-/* @font-face { */
-/* 	font-family: 'Fira Code'; */
-/* 	font-style: normal; */
-/* 	font-weight: 500; */
-/* 	src: local('Fira Code'), url('./FiraCode-Regular.woff') format('woff'); */
-/* } */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Fira Code'), url('./FiraCode-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Fira Code'), url('./FiraCode-Regular.woff') format('woff');
+}
 body * {
-	font-family: 'JetBrains Mono';
+	font-family: "Fira Code";
 	font-weight: 300;
 }
 
@@ -35,11 +34,9 @@ body * {
  * 	   General		  *
  ********************/
 
-html,
-body,
-#root {
-	height: 100%;
-	width: 100%;
+html, body, #root {
+	height:100%;
+	width:100%;
 }
 body {
 	margin: 0;
@@ -48,11 +45,9 @@ body {
 	overflow: hidden;
 }
 p {
-	margin: 0px;
+	margin:0px
 }
-a,
-a:visited,
-a:active {
+a, a:visited, a:active {
 	color: var(--default-color);
 	text-decoration: none;
 }
@@ -61,21 +56,21 @@ a:active {
  * 	   Scrollbar	*
  ********************/
 ::-webkit-scrollbar {
-	/* width */
-	width: 10px;
+    /* width */
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	/* Handle */
-	background: var(--default-color);
+    /* Handle */
+    background: var(--default-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	/* Handle on hover */
-	background: var(--default-color);
+    background: var(--default-color);
 }
 
 ::-webkit-scrollbar-track-piece {
-	/* not handle on */
-	background: transparent;
+    /* not handle on */
+    background: transparent;
 }
