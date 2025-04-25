@@ -31,7 +31,9 @@
 			{#if position}
 				<Forecast {...position} />
 			{/if}
-			<div class="placeholder">Placeholder</div>
+
+			<!-- TODO: Add news or forcast weather under current conditions. Calendar or schedule? -->
+			<div class="placeholder"></div>
 		</div>
 		<img {src} alt="I'm Fine" />
 
