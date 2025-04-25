@@ -19,12 +19,13 @@
 		bookmarks = await resposne.json();
 		navigator.geolocation.getCurrentPosition(success, error);
 	});
+	$inspect(position);
 </script>
 
 <div class="container">
 	<div class="showcase">
 		{#if position}
-			<Forecast {position} />
+			<Forecast {...position} />
 		{/if}
 		<img {src} alt="I'm Fine" />
 
