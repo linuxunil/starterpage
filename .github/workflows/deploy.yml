@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     tags:
-      - latest
+      - v0.1.*
 permissions:
   contents: read
   pages: write
