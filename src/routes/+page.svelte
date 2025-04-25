@@ -27,11 +27,6 @@
 
 <div class="container">
 	<div class="showcase">
-<<<<<<< HEAD
-		<!-- {#if position} -->
-		<!-- 	<Forcast {position} /> -->
-		<!-- {/if} -->
-=======
 		<div class="right-column">
 			{#if position}
 				<Forecast {...position} />
@@ -40,7 +35,6 @@
 			<!-- TODO: Add news or forcast weather under current conditions. Calendar or schedule? -->
 			<div class="placeholder"></div>
 		</div>
->>>>>>> weather
 		<img {src} alt="I'm Fine" />
 
 		<Bookmarks {bookmarks} />
