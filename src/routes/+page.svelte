@@ -1,9 +1,13 @@
 <script>
+	// FIXME: This needs to have a +layout.svelte and be redesigned for mobile first.
 	import { onMount } from 'svelte';
 	import Bookmarks from '$lib/components/Bookmarks.svelte';
 	import Search from '$lib/components/Search.svelte';
 	import Forecast from '$lib/components/Forecast.svelte';
+
+	// TODO: Add additional images that can produce, or associated with color schemes
 	let src = 'https://prettycoffee.github.io/fluidity/assets/pic_2-ae471b04.jpg';
+	//NOTE: Could add more search engines in the future.
 	let search_term = $state('Duck Duck Go');
 	let bookmarks = $state();
 	let position = $state();
@@ -19,23 +23,31 @@
 		bookmarks = await resposne.json();
 		navigator.geolocation.getCurrentPosition(success, error);
 	});
-	$inspect(position);
 </script>
 
 <div class="container">
 	<div class="showcase">
-		{#if position}
-			<Forecast {...position} />
-		{/if}
+		<div class="right-column">
+			{#if position}
+				<Forecast {...position} />
+			{/if}
+			<div class="placeholder">Placeholder</div>
+		</div>
 		<img {src} alt="I'm Fine" />
 
 		<Bookmarks {bookmarks} />
 	</div>
-	I really<i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
 	<Search {search_term} />
 </div>
 
 <style>
+	.right-column {
+		display: flex;
+		flex-direction: column;
+	}
+	.placeholder {
+		height: 50%;
+	}
 	img {
 		height: 400px;
 		width: 400px;

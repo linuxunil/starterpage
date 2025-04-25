@@ -1,13 +1,11 @@
 <script>
 	import { PUBLIC_WEATHER_API_KEY } from '$env/static/public';
 	import { onMount } from 'svelte';
-	const { accuracy, altitude, altitudeAccuracy, heading, latitude, longitude, speed } = $props();
+	const { latitude, longitude } = $props();
+	// const { accuracy, altitude, altitudeAccuracy, heading, latitude, longitude, speed } = $props();
 	// const part = $state(''); // Exclude parts of forecast with comma seperated list
 	// values [current,minutely,hourly,daily, alerts]
 	let forecast = $state();
-	// let alerts = $state();
-	// const state_abr = 'IN';
-	// const zoneId = 'INZ081';
 	// TODO: add URLSearchParams to build string.
 	function weather_icon(id) {
 		return `https://openweathermap.org/img/wn/${id}@2x.png`;
@@ -21,6 +19,7 @@
 	});
 </script>
 
+<!-- TODO: Refactor weather into it's own component so it can be used for current and forcast. -->
 <div class="weather">
 	{#if forecast}
 		<p>{forecast.name}</p>
@@ -28,14 +27,14 @@
 			src={weather_icon(forecast.weather[0].icon)}
 			alt={`Weather icon for ${forecast.weather[0].description}`}
 		/>
-		<p>Temp: {forecast.main.temp}</p>
+		<p>Temp: {forecast.main.temp}&#8457;</p>
 		<p>Weather: {forecast.weather[0].description}</p>
-		<!-- <p>Forecast: {forecast.properties.periods[0].shortForecast}</p> -->
 	{/if}
 </div>
 
 <style>
 	.weather {
+		font-size: 1.25em;
 		background-color: rgb(189, 190, 191);
 		width: 33%;
 		min-width: 200px;
@@ -45,6 +44,6 @@
 		border-radius: var(--border-radius);
 		display: flex;
 		flex-flow: column wrap;
-		align-content: space-around;
+		align-content: space-between;
 	}
 </style>
