@@ -29,6 +29,11 @@
 /* 		local('Fira Code'), */
 /* 		url('./FiraCode-Regular.woff') format('woff'); */
 /* } */
+
+@font-face {
+	font-family: 'JetBrains Mono';
+}
+
 body * {
 	font-family: 'JetBrains Mono';
 }
